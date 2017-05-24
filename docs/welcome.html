@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Big Oak Cabin</title>
+<link href="css/reset.css"               type="text/css" rel="stylesheet" />
+<link href="css/bigoakcabin.css"         type="text/css" rel="stylesheet" />
+<link href="css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$('a').each(function(){
+			var path = window.location.href;
+			var page = path.substring(path.lastIndexOf('/') + 1);
+			if( $(this).attr('href') == page) {
+				$(this).addClass('active');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<div id="header">
+	<div id="logo"></div>
+</div><!-- end header -->
+<ul id="nav">
+    <li><a href="welcome.php">Welcome</a></li>
+    <li><a href="gallery.php"      class="two-line">Photo<br />Gallery</a></li>
+    <li><a href="rates.php"        class="two-line">Rates &<br />Reservations</a></li>
+    <!--<li><a href="calendar.php" class="two-line">Availability<br />Calendar</a></li>-->
+    <li><a href="attractions.php"  class="two-line">Local<br />Attractions</a></li>
+</ul>
+
+<div id="content">
+	<div class="pad">
+
+<div class="page-welcome">
+	<div class="column-text left">
+        <h1>Welcome to Big Oak Cabin!</h1>
+        <p>
+        Big Oak Cabin is located at 2,200 feet, high on the ridgeline of Scenic Hwy 7, just a short walk from the most majestic overlooks in all the Ozark Mountain region.  You can literally step out your door and see great distances to the west and all the way into Missouri to the northeast just a short walk down the road.  
+        </p>
+        <ul class="list">
+            Big Oak Cabin is a 2-level house, with 1800 square feet, and sleeps from 6 to 8 persons comfortably. A perfect getaway for you, a couple, even two couples or even a large family.  Two bedrooms / two baths.  
+            <li>The downstairs master bedroom has a king bed.</li>
+            <li>The upstairs bedroom has a queen bed and a double bed.</li>
+            <li>The upstairs living area has a "day bed", with a roll-away bed underneath.</li>
+        </ul>
+        <br />
+        <ul class="list">Our cedar-sided cabin also features: 
+            <li>Fully equipped kitchen � everything you'll need to cook and serve!</li>
+            <li>Full length elevated rear deck for viewing westward</li>
+            <li>Over two acres of private land for you</li>
+            <li>Full length front porch for relaxation</li>
+            <li>Pond and fishing deck out back (<strong><u>NO swimming</u></strong>, please; not responsible for accidents!)</li>
+            <li>Pear trees bearing in season. (Eat all you want!  Pick yourself a sack full to take home.)</li>
+        </ul>
+    </div>
+    <div class="column-images right">
+        <img src="images/welcome01.jpg">
+        <img src="images/welcome02.jpg">
+        <!--
+        <div id="map">
+            <iframe width="300" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=35.966059,-93.168182&amp;spn=0.142827,0.338173&amp;z=12&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=35.966059,-93.168182&amp;spn=0.142827,0.338173&amp;z=12&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+        -->
+    </div>
+</div>
+<div class="clear"></div>
+
+	</div><!-- end pad -->
+</div><!-- end content -->
+
+</div><!-- end page -->
+
+<div id="footer">
+
+	<p class="left" style="padding-top: 10px;">
+    	To reserve your<br />
+        getaway now, call:
+	</p>
+	<p class="left">
+		<b>870-446-6223</b><br />
+		<b>870-446-2810</b>
+	</p>
+    <p class="left" style="padding-top: 5px;">
+    	<small>Or email:</small><br />
+	    <a href="mailto:bigoak@cabinsintheozarks.com"><b>bigoak@cabinsintheozarks.com</b></a>
+    </p>
+
+	<div class="clear"></div>
+
+</div><!-- end footer -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22033224-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+

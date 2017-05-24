@@ -1,0 +1,252 @@
+/* BigOakCabin.css */
+
+/*
+	Colors:
+		Light tan:      #dfd29e
+		Medium brown 1: #6f3a09
+		Medium brown 2: #392113
+		Dark brown:     #21110a
+*/
+
+body {
+	background: url("../images/bg-oak2.png");
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#logo {
+	background: url("../images/bigoak-logo.png");
+	display: block;
+	height: 100px;
+	margin: 0 auto;
+	width: 327px;
+}
+
+/********************************************
+	INTRO PAGE
+********************************************/
+#page {
+	background: #dfd29e;
+	border: 30px solid #21110a;
+	margin: 30px auto 0 auto;
+	overflow: hidden;
+	width: 800px;
+}
+.intro-left {
+	padding: 80px 0 0 20px;
+	width: 380px;
+}
+.intro-right {
+	padding: 30px 30px 30px 0;
+	width: 370px;
+}
+.intro-left h1 {
+	color: #392113;
+	font-family: Georgia;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 30px 0;
+	text-align: center;
+}
+
+/********************************************
+	MAIN LAYOUT
+********************************************/
+#header {
+	background: url("../images/bg-header.jpg");
+	height: 100px;
+	padding: 30px;
+}
+#nav {
+	background: url("../images/bg-nav.png");
+	border-top: 2px solid #392113;
+	height: 50px;
+	overflow: hidden;
+}
+#nav li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+#nav li a {
+	border-left:   1px solid #D3AE68;
+	border-right:  1px solid #6f3a09;
+	border-bottom: 2px solid #392113;
+	color: #000;
+	display: block;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: #d3ae68 1px 1px 0;
+}
+#nav li a.two-line {
+	padding: 8px 0;
+}
+#nav li a:hover {
+	background: url("../images/bg-nav.png");
+	background-position: center bottom;
+	color: #FFF;
+	text-shadow: #392113 1px 1px 0;
+}
+#nav li a.active {
+	background: url("../images/bg-nav2.png") #F3EDC4;
+	border-bottom: 2px solid #F3EDC4;
+	color: #000;
+	/* text-shadow: #d3ae68 1px 1px 0; */
+	text-shadow: #FFF 1px 1px 0;
+}
+#content {
+	background: #F3EDC4;
+}
+#content .pad {
+	padding: 40px;
+}
+#content a {
+	color: #4a6d03;
+}
+#content a:hover {
+	color: #6f3a09;
+}
+#footer {
+	background: #21110a;
+	color: #FFF;
+	height: 90px;
+	margin: 0 auto 30px auto;
+	padding: 0 100px;
+	width: 660px;
+}
+#footer p {
+	margin-right: 25px;
+}
+#footer b {
+	font-family: Georgia, serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+}
+#footer a {
+	color: #dfd29e;
+}
+
+#map {
+	border: 3px solid #392113;
+	height: 400px;
+	width: 300px;
+}
+
+/********************************************
+	PAGE-SPECIFIC
+********************************************/
+
+#content .column-text {
+	padding-right: 20px;
+	width: 390px;
+}
+#content .column-images {
+	width: 306px;
+}
+
+#content .column-text img,
+#content .column-images img {
+	border: 3px solid #FFF;
+	display: block;
+	margin: 20px auto 0 auto;
+	width: 300px;
+}
+.caption {
+	font-size: 12px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+#content .page-attractions .attraction {
+	margin: 1em 0;
+}
+
+#content .page-attractions .attraction a,
+#content .page-attractions .attraction b {
+	font-size: 14px;
+	font-weight: bold;
+}
+#content .page-attractions .attraction p,
+#content .page-attractions .attraction ul {
+	padding-left: 2em;
+}
+
+#content .page-gallery {
+	height: 600px;
+}
+#content .page-gallery ul li {
+	display: block;
+	float: left;
+	height: 120px;
+	padding: 9px;
+	width: 160px;
+}
+#content .page-gallery ul li a {
+	border: 3px solid #4a6d03;
+	display: block;
+	float: left;
+	height: 120px;
+	width: 160px;
+}
+#content .page-gallery ul li a:hover {
+	border: 3px solid #FFF; /* 0d150d; */
+}
+
+/********************************************
+	UI ELEMENTS
+********************************************/
+a.button.come-in {
+	background: url("../images/btn-comein.png");
+	display: block;
+	height: 65px;
+	margin: 0 auto;
+	width: 194px;
+}
+a.button.come-in:hover {
+	background-position: bottom center;
+}
+
+h1 {
+	color: #6f3a09;
+	font-family: Georgia;
+	font-size: 24px;
+	margin-bottom: 1em;
+}
+
+h2 {
+	color: #392113;
+	font-family: Georgia, serif;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+
+ul.list {
+	line-height: 1.4em;
+	list-style: disc;
+}
+ul.list li {
+	margin-left: 2em;
+}
+
+p {
+	margin: 0.6em 0;
+	line-height: 1.2em;
+}
+
+small {
+	font-size: 12px;
+}
+
+.clear { clear: both; }
+.hide  { display: none; }
+.left  { float: left; }
+.right { float: right; }

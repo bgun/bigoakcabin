@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Big Oak Cabin</title>
+<link href="css/reset.css"               type="text/css" rel="stylesheet" />
+<link href="css/bigoakcabin.css"         type="text/css" rel="stylesheet" />
+<link href="css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$('a').each(function(){
+			var path = window.location.href;
+			var page = path.substring(path.lastIndexOf('/') + 1);
+			if( $(this).attr('href') == page) {
+				$(this).addClass('active');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<div id="header">
+	<div id="logo"></div>
+</div><!-- end header -->
+<ul id="nav">
+    <li><a href="welcome.php">Welcome</a></li>
+    <li><a href="gallery.php"      class="two-line">Photo<br />Gallery</a></li>
+    <li><a href="rates.php"        class="two-line">Rates &<br />Reservations</a></li>
+    <!--<li><a href="calendar.php" class="two-line">Availability<br />Calendar</a></li>-->
+    <li><a href="attractions.php"  class="two-line">Local<br />Attractions</a></li>
+</ul>
+
+<div id="content">
+	<div class="pad">
+
+<script>
+	$(document).ready(function(){
+		$('#content .page-gallery ul li a').lightBox();
+	});
+</script>
+
+<div class="page-gallery">
+	<h1>Photo Gallery</h1>
+
+	<ul>
+    	<li><a href="gallery/cabinfront003.jpg"><img src="gallery/cabinfront003-th.jpg" /></a></li>
+        <li><a href="gallery/bedroom005.jpg"   ><img src="gallery/bedroom005-th.jpg" /></a></li>
+        <li><a href="gallery/bedroom007.jpg"   ><img src="gallery/bedroom007-th.jpg" /></a></li>
+        <li><a href="gallery/cabinback011.jpg" ><img src="gallery/cabinback011-th.jpg" /></a></li>
+        
+        <li><a href="gallery/bedroom022.jpg"   ><img src="gallery/bedroom022-th.jpg" /></a></li>
+        <li><a href="gallery/deck014.jpg"      ><img src="gallery/deck014-th.jpg" /></a></li>
+        <li><a href="gallery/deck015.jpg"      ><img src="gallery/pond015-th.jpg" /></a></li>
+        <li><a href="gallery/houseandsky.jpg"  ><img src="gallery/houseandsky-th.jpg" /></a></li>
+
+        <li><a href="gallery/kitchen2.jpg"     ><img src="gallery/kitchen2-th.jpg" /></a></li>
+        <li><a href="gallery/living.jpg"       ><img src="gallery/living-th.jpg" /></a></li>
+        <li><a href="gallery/twotrees.jpg"     ><img src="gallery/twotrees-th.jpg" /></a></li>
+        <li><a href="gallery/living025.jpg"    ><img src="gallery/living025-th.jpg" /></a></li>
+        
+        <li><a href="gallery/kitchen024.jpg"   ><img src="gallery/kitchen024-th.jpg" /></a></li>
+        <li><a href="gallery/backporch026.jpg" ><img src="gallery/backporch026-th.jpg"/></a></li>        
+        <li><a href="gallery/downstairs1.jpg"  ><img src="gallery/downstairs1-th.jpg" /></a></li>
+        <li><a href="gallery/frontporch018.jpg"><img src="gallery/frontporch018-th.jpg" /></a></li>
+    </ul>
+</div>
+
+	</div><!-- end pad -->
+</div><!-- end content -->
+
+</div><!-- end page -->
+
+<div id="footer">
+
+	<p class="left" style="padding-top: 10px;">
+    	To reserve your<br />
+        getaway now, call:
+	</p>
+	<p class="left">
+		<b>870-446-6223</b><br />
+		<b>870-446-2810</b>
+	</p>
+    <p class="left" style="padding-top: 5px;">
+    	<small>Or email:</small><br />
+	    <a href="mailto:bigoak@cabinsintheozarks.com"><b>bigoak@cabinsintheozarks.com</b></a>
+    </p>
+
+	<div class="clear"></div>
+
+</div><!-- end footer -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22033224-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
