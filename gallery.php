@@ -1,0 +1,35 @@
+<?php include("header.inc"); ?>
+
+<script>
+	$(document).ready(function(){
+		$('#content .page-gallery ul li a').lightBox();
+	});
+</script>
+
+<div class="page-gallery">
+	<h1>Photo Gallery</h1>
+
+	<ul>
+    	<li><a href="gallery/cabinfront003.jpg"><img src="gallery/cabinfront003-th.jpg" /></a></li>
+        <li><a href="gallery/bedroom005.jpg"   ><img src="gallery/bedroom005-th.jpg" /></a></li>
+        <li><a href="gallery/bedroom007.jpg"   ><img src="gallery/bedroom007-th.jpg" /></a></li>
+        <li><a href="gallery/cabinback011.jpg" ><img src="gallery/cabinback011-th.jpg" /></a></li>
+        
+        <li><a href="gallery/bedroom022.jpg"   ><img src="gallery/bedroom022-th.jpg" /></a></li>
+        <li><a href="gallery/deck014.jpg"      ><img src="gallery/deck014-th.jpg" /></a></li>
+        <li><a href="gallery/deck015.jpg"      ><img src="gallery/pond015-th.jpg" /></a></li>
+        <li><a href="gallery/houseandsky.jpg"  ><img src="gallery/houseandsky-th.jpg" /></a></li>
+
+        <li><a href="gallery/kitchen2.jpg"     ><img src="gallery/kitchen2-th.jpg" /></a></li>
+        <li><a href="gallery/living.jpg"       ><img src="gallery/living-th.jpg" /></a></li>
+        <li><a href="gallery/twotrees.jpg"     ><img src="gallery/twotrees-th.jpg" /></a></li>
+        <li><a href="gallery/living025.jpg"    ><img src="gallery/living025-th.jpg" /></a></li>
+        
+        <li><a href="gallery/kitchen024.jpg"   ><img src="gallery/kitchen024-th.jpg" /></a></li>
+        <li><a href="gallery/backporch026.jpg" ><img src="gallery/backporch026-th.jpg"/></a></li>        
+        <li><a href="gallery/downstairs1.jpg"  ><img src="gallery/downstairs1-th.jpg" /></a></li>
+        <li><a href="gallery/frontporch018.jpg"><img src="gallery/frontporch018-th.jpg" /></a></li>
+    </ul>
+</div>
+
+<?php include("footer.inc"); ?>
