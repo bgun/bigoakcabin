@@ -1,4 +1,40 @@
-<?php include("header.inc"); ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Big Oak Cabin</title>
+<link href="css/reset.css"               type="text/css" rel="stylesheet" />
+<link href="css/bigoakcabin.css"         type="text/css" rel="stylesheet" />
+<link href="css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$('a').each(function(){
+			var path = window.location.href;
+			var page = path.substring(path.lastIndexOf('/') + 1);
+			if( $(this).attr('href') == page) {
+				$(this).addClass('active');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<div id="header">
+	<div id="logo"></div>
+</div><!-- end header -->
+<ul id="nav">
+    <li><a href="welcome.html">Welcome</a></li>
+    <li><a href="gallery.html"      class="two-line">Photo<br />Gallery</a></li>
+    <li><a href="rates.html"        class="two-line">Rates &<br />Reservations</a></li>
+    <li><a href="attractions.html"  class="two-line">Local<br />Attractions</a></li>
+</ul>
+
+<div id="content">
+	<div class="pad">
 
 <div class="page-attractions">
 	<div class="column-text left">
@@ -6,7 +42,7 @@
 
 		<div class="attraction">
 			<a href="http://www.theozarkmountains.com">Downtown Jasper</a><br />
-			<p>Quaint antique shops, restaurants and more.  Every visitor to Jasper needs to stop in at the Ozark Café! – one of Arkansas' most famous restaurants, right on the town square (across from the courthouse) since 1909.      </p>
+			<p>Quaint antique shops, restaurants and more.  Every visitor to Jasper needs to stop in at the Ozark Cafï¿½! ï¿½ one of Arkansas' most famous restaurants, right on the town square (across from the courthouse) since 1909.      </p>
 		</div>
 
 		<div class="attraction">    
@@ -27,13 +63,13 @@
 		
 		<div class="attraction">
 			<a href="http://theozarkmountains.com/hiking_trails.htm">Hiking</a><br />
-			<p>Some of the best trailheads in the area are Lost Valley Trail and Hawksbill Crag (Whitaker Point). Both are relatively easy walks and will have waterfalls running during rainy season.  There are numerous other trails in the area – at least 50 outstanding and beautiful hiking trails within a 20 mile radius Big Oak Cabin!</p>
+			<p>Some of the best trailheads in the area are Lost Valley Trail and Hawksbill Crag (Whitaker Point). Both are relatively easy walks and will have waterfalls running during rainy season.  There are numerous other trails in the area ï¿½ at least 50 outstanding and beautiful hiking trails within a 20 mile radius Big Oak Cabin!</p>
 			<ul class="list">Trail information is available from:
 				<li>Ranger Station, 870.446.5373</li>
 				<li>Park Headquarters, 870.741.5443</li>
 				<li>Buffalo National River, 870.741.5443</li>
 				<li>www.nps.gov/buff</li>
-				<li>Ozark National Forest, 870.446.5122, District Office – one (1) mile North of Jasper on Highway 7.</li>
+				<li>Ozark National Forest, 870.446.5122, District Office ï¿½ one (1) mile North of Jasper on Highway 7.</li>
 			</ul>
 			<p>Additional information on hiking and swimming holes on the Buffalo River, and scenic driving tours is at the cabin and at the Jasper Chamber of Commerce, 204 N Spring St, on the square in Jasper. </p>
 		</div>
@@ -59,7 +95,7 @@
 		
 		<div class="attraction">
 			<a href="http://www.adventuresinarkansas.com/?p=103">Twin Falls</a><br />
-			<p>How this got its name, I don't know: it's a triple falls!  Rumor has it that the stream above the cliff broke into two waterfalls for years, but a new section of rock broke loose years after the falls was named and it became a triple falls – just never got re-named.  From Jasper, go west on Hwy 74, turn right at the Camp Orr sig and follow the steep dirt road to the bottom of the valley.  Not advisable to drive down in wet conditions unless you have a 4-wheel drive.  Ordinary cars can make it back up from the valley if the road is dry.  Look for the sign on the left at the bottom saying "Twin Falls".  The walking trail is less than ¼" mile to the falls.  </p>
+			<p>How this got its name, I don't know: it's a triple falls!  Rumor has it that the stream above the cliff broke into two waterfalls for years, but a new section of rock broke loose years after the falls was named and it became a triple falls ï¿½ just never got re-named.  From Jasper, go west on Hwy 74, turn right at the Camp Orr sig and follow the steep dirt road to the bottom of the valley.  Not advisable to drive down in wet conditions unless you have a 4-wheel drive.  Ordinary cars can make it back up from the valley if the road is dry.  Look for the sign on the left at the bottom saying "Twin Falls".  The walking trail is less than ï¿½" mile to the falls.  </p>
 		</div>
 		
 		<div class="attraction">
@@ -73,7 +109,7 @@
 		</div>
 
 		<div class="attraction">
-			<a href="http://www.thefrontporchinn.net/ozarkcafe.htm">Ozark Café</a>
+			<a href="http://www.thefrontporchinn.net/ozarkcafe.htm">Ozark Cafï¿½</a>
 			<p>One of Arkansas' most famous and historic restaurants. First opened in 1909.</p>
 		</div>
 		
@@ -129,8 +165,46 @@
     <p>
     For more information about local sites of interest, feel free to call:
     Newton County Chamber of Commerce:  870.446.2455  
-    Or call me – Dennis Gundersen (Oak Cabin Owner): 918.246.9901 
+    Or call me ï¿½ Dennis Gundersen (Oak Cabin Owner): 918.246.9901 
     </p>
 </div>
 
-<?php include("footer.inc"); ?>
+	</div><!-- end pad -->
+</div><!-- end content -->
+
+</div><!-- end page -->
+
+<div id="footer">
+
+	<p class="left" style="padding-top: 10px;">
+    	To reserve your<br />
+        getaway now, call:
+	</p>
+	<p class="left">
+		<b>870-446-6223</b><br />
+		<b>870-446-2810</b>
+	</p>
+    <p class="left" style="padding-top: 5px;">
+    	<small>Or email:</small><br />
+	    <a href="mailto:bigoak@cabinsintheozarks.com"><b>bigoak@cabinsintheozarks.com</b></a>
+    </p>
+
+	<div class="clear"></div>
+
+</div><!-- end footer -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22033224-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
